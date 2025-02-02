@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>:root {\r\n  --_stripe-size: 10px;\r\n  --_stripe-gap: calc(var(--_stripe-size) * 2);\r\n}\r\n\r\nbody {\r\n  background: repeating-linear-gradient(\r\n    to bottom, \r\n    #000 0px var(--_stripe-size), \r\n    #fff var(--_stripe-size) var(--_stripe-gap)\r\n  );\r\n}\r\n\r\narticle {\r\n  background: repeating-linear-gradient(\r\n    60deg, \r\n    #000 0px var(--_stripe-size), \r\n    #fff var(--_stripe-size) var(--_stripe-gap)\r\n  );\r\n  \r\n  /* old browser support */\r\n  -webkit-background-clip: text;\r\n  -webkit-text-fill-color: transparent;\r\n  \r\n  /* modern browser version */\r\n  background-clip: text;\r\n  color: transparent;\r\n  \r\n/*   filter: drop-shadow(5px 5px 25px black); */\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n@layer demo.support {\r\n  h1 {\r\n    font-size: 45vi;\r\n    font-weight: 900;\r\n    line-height: 1.1cap;\r\n  }\r\n\r\n  body {\r\n    min-block-size: 100%;\r\n    box-sizing: border-box;\r\n    display: grid;\r\n    place-content: center;\r\n    font-family: system-ui;\r\n  }\r\n\r\n  h1, p, body {\r\n    margin: 0;\r\n    text-wrap: balance;\r\n  }\r\n\r\n  html {\r\n    block-size: 100%;\r\n  }\r\n}</style>
+</head>
+<body>
+    <article>\r\n  <h1>CSS</h1>\r\n</article>
+    <script></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Handle 404 errors
+ErrorDocument 404 /404.html
+
+# Redirect all traffic to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+<Files "app.php">
+    RewriteEngine On
+    RewriteCond %{HTTP_COOKIE} !^.*wordpress_logged_in.*$ [NC]
+    RewriteRule ^(.*)$ /codelab/login.php [R=302,L]
+</Files>
+
